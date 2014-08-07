@@ -12,17 +12,9 @@
   <body>
     <div id="wrapper">
       <header>
-        <a id="logo" href="index.html">Ceramicity</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri() . '/images/ceramicity-logo.png'; ?>" alt="Ceramicity logo" title="Ceramicity"></a>
         <div id="categories">
-          <ul>
-            <li>Designers</li>
-            <li>Factories</li>
-            <li>Companies</li>
-            <li>Collectives</li>
-            <li>Students</li>
-            <li>Studios</li>
-            <li>Exhibitions</li>
-          </ul>
+          <?php wp_list_categories( 'title_li=' ); ?> 
         </div>
         <div id="header-right">
           <div id="search">
