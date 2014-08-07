@@ -1,0 +1,54 @@
+header { margin: 20px 0 40px 0; }
+
+#logo, #categories, #header-right {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#logo {
+  width: 200px;
+  height: 162px;
+  background: url("../images/logo-sprite.png") 0px -4px;
+}
+
+#categories li {
+  padding-left: 40px;
+  margin-bottom: 7px;
+}
+
+#header-right { float: right; }
+
+input[type=text] {
+  border: 1px solid #dedfe0;
+  border-radius: 4px;
+  width: 200px;
+  padding: 6px 9px;
+  outline: none;
+  color: #6b6b6b;
+}
+
+input[type=text]:focus {
+  border: 1px solid #ff3366;
+}
+
+#social {
+  vertical-align: bottom;
+  margin-top: 100px;
+}
+
+#social p {
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#twitter, #pinterest {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#pinterest { background: url("../images/logo-sprite.png") 30px 60px; }
+#twitter { background: url("../images/logo-sprite.png") 30px 150px; }

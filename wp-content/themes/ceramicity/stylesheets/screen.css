@@ -1,0 +1,205 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_layout.scss */
+body {
+  font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* line 8, ../sass/partials/_layout.scss */
+#wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/partials/_header.scss */
+header {
+  margin: 20px 0 40px 0;
+}
+
+/* line 3, ../sass/partials/_header.scss */
+#logo, #categories, #header-right {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 8, ../sass/partials/_header.scss */
+#logo {
+  width: 200px;
+  height: 162px;
+  background: url("../images/logo-sprite.png") 0px -4px;
+}
+
+/* line 14, ../sass/partials/_header.scss */
+#categories li {
+  padding-left: 40px;
+  margin-bottom: 7px;
+}
+
+/* line 19, ../sass/partials/_header.scss */
+#header-right {
+  float: right;
+}
+
+/* line 21, ../sass/partials/_header.scss */
+input[type=text] {
+  border: 1px solid #dedfe0;
+  border-radius: 4px;
+  width: 200px;
+  padding: 6px 9px;
+  outline: none;
+  color: #6b6b6b;
+}
+
+/* line 30, ../sass/partials/_header.scss */
+input[type=text]:focus {
+  border: 1px solid #ff3366;
+}
+
+/* line 34, ../sass/partials/_header.scss */
+#social {
+  vertical-align: bottom;
+  margin-top: 100px;
+}
+
+/* line 39, ../sass/partials/_header.scss */
+#social p {
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 45, ../sass/partials/_header.scss */
+#twitter, #pinterest {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 53, ../sass/partials/_header.scss */
+#pinterest {
+  background: url("../images/logo-sprite.png") 30px 60px;
+}
+
+/* line 54, ../sass/partials/_header.scss */
+#twitter {
+  background: url("../images/logo-sprite.png") 30px 150px;
+}
+
+/* line 1, ../sass/partials/_index.scss */
+#image {
+  display: inline-block;
+  width: 60%;
+  background-image: url("../images/featured-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+}
+
+/* line 10, ../sass/partials/_index.scss */
+#text {
+  vertical-align: top;
+  margin-left: 34px;
+  display: inline-block;
+  width: 36%;
+}
+
+/* line 17, ../sass/partials/_index.scss */
+.grey {
+  color: #a1a1a1;
+}
+
+/* line 21, ../sass/partials/_index.scss */
+.divider {
+  margin: 35px 0 35px 0;
+  border-top: 1px solid #dedfe0;
+}
+
+/* line 26, ../sass/partials/_index.scss */
+.post {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+/* line 31, ../sass/partials/_index.scss */
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 36, ../sass/partials/_index.scss */
+.post h1 {
+  font-size: 16px;
+}
