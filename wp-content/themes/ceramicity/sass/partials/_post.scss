@@ -1,0 +1,48 @@
+#post-aside {
+  margin-top: 32px;
+  position: fixed;
+  width: 25%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#post-nav ul {
+  margin-top: 26px;
+}
+
+#post-nav p {
+  vertical-align: middle;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.email, .facebook, .twitter, .google, .tumblr, .pinterest, .linkedin {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.email { background: url("../images/logo-sprite.png") 30px 0px; }
+.facebook { background: url("../images/logo-sprite.png") 30px -30px; }
+.twitter { background: url("../images/logo-sprite.png") 30px -60px; }
+.google { background: url("../images/logo-sprite.png") 30px -90px; }
+.tumblr { background: url("../images/logo-sprite.png") 30px -120px; }
+.pinterest { background: url("../images/logo-sprite.png") 30px -150px; }
+.linkedin { background: url("../images/logo-sprite.png") 30px -180px; }
+
+#post {
+  margin-left: 25%;
+  display: inline-block;
+}
+
+#post-meta {
+  margin: 2px;
+  padding: 0 0 30px 0;
+}
+
+#post-content p {
+  line-height: 21px;
+  font-size: 118%;
+  max-width: 710px;
+}

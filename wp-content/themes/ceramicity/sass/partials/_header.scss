@@ -1,22 +1,15 @@
 header { margin: 20px 0 40px 0; }
 
-#logo, #categories, #header-right {
-  vertical-align: middle;
+#categories, .header-right {
+  vertical-align: top;
   display: inline-block;
-}
-
-#logo {
-  width: 200px;
-  height: 162px;
-  background: url("../images/logo-sprite.png") 0px -4px;
+  border: 1px solid black;
 }
 
 #categories li {
   padding-left: 40px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
-
-#header-right { float: right; }
 
 input[type=text] {
   border: 1px solid #dedfe0;

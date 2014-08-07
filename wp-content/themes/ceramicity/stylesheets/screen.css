@@ -76,6 +76,21 @@ body {
 }
 
 /* line 8, ../sass/partials/_layout.scss */
+ul, ol {
+  list-style-type: none;
+}
+
+/* line 12, ../sass/partials/_layout.scss */
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 16, ../sass/partials/_layout.scss */
+a:hover {
+  color: #ff3366;
+}
+
+/* line 21, ../sass/partials/_layout.scss */
 #wrapper {
   max-width: 1000px;
   width: 100%;
@@ -88,30 +103,19 @@ header {
 }
 
 /* line 3, ../sass/partials/_header.scss */
-#logo, #categories, #header-right {
-  vertical-align: middle;
+#categories, .header-right {
+  vertical-align: top;
   display: inline-block;
+  border: 1px solid black;
 }
 
-/* line 8, ../sass/partials/_header.scss */
-#logo {
-  width: 200px;
-  height: 162px;
-  background: url("../images/logo-sprite.png") 0px -4px;
+/* line 9, ../sass/partials/_header.scss */
+#categories li {
+  padding-left: 40px;
+  margin-bottom: 10px;
 }
 
 /* line 14, ../sass/partials/_header.scss */
-#categories li {
-  padding-left: 40px;
-  margin-bottom: 7px;
-}
-
-/* line 19, ../sass/partials/_header.scss */
-#header-right {
-  float: right;
-}
-
-/* line 21, ../sass/partials/_header.scss */
 input[type=text] {
   border: 1px solid #dedfe0;
   border-radius: 4px;
@@ -121,25 +125,25 @@ input[type=text] {
   color: #6b6b6b;
 }
 
-/* line 30, ../sass/partials/_header.scss */
+/* line 23, ../sass/partials/_header.scss */
 input[type=text]:focus {
   border: 1px solid #ff3366;
 }
 
-/* line 34, ../sass/partials/_header.scss */
+/* line 27, ../sass/partials/_header.scss */
 #social {
   vertical-align: bottom;
   margin-top: 100px;
 }
 
-/* line 39, ../sass/partials/_header.scss */
+/* line 32, ../sass/partials/_header.scss */
 #social p {
   margin-right: 10px;
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 45, ../sass/partials/_header.scss */
+/* line 38, ../sass/partials/_header.scss */
 #twitter, #pinterest {
   vertical-align: middle;
   display: inline-block;
@@ -148,12 +152,12 @@ input[type=text]:focus {
   height: 30px;
 }
 
-/* line 53, ../sass/partials/_header.scss */
+/* line 46, ../sass/partials/_header.scss */
 #pinterest {
   background: url("../images/logo-sprite.png") 30px 60px;
 }
 
-/* line 54, ../sass/partials/_header.scss */
+/* line 47, ../sass/partials/_header.scss */
 #twitter {
   background: url("../images/logo-sprite.png") 30px 150px;
 }
@@ -202,4 +206,87 @@ input[type=text]:focus {
 /* line 36, ../sass/partials/_index.scss */
 .post h1 {
   font-size: 16px;
+}
+
+/* line 1, ../sass/partials/_post.scss */
+#post-aside {
+  margin-top: 32px;
+  position: fixed;
+  width: 25%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* line 9, ../sass/partials/_post.scss */
+#post-nav ul {
+  margin-top: 26px;
+}
+
+/* line 13, ../sass/partials/_post.scss */
+#post-nav p {
+  vertical-align: middle;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* line 19, ../sass/partials/_post.scss */
+.email, .facebook, .twitter, .google, .tumblr, .pinterest, .linkedin {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 26, ../sass/partials/_post.scss */
+.email {
+  background: url("../images/logo-sprite.png") 30px 0px;
+}
+
+/* line 27, ../sass/partials/_post.scss */
+.facebook {
+  background: url("../images/logo-sprite.png") 30px -30px;
+}
+
+/* line 28, ../sass/partials/_post.scss */
+.twitter {
+  background: url("../images/logo-sprite.png") 30px -60px;
+}
+
+/* line 29, ../sass/partials/_post.scss */
+.google {
+  background: url("../images/logo-sprite.png") 30px -90px;
+}
+
+/* line 30, ../sass/partials/_post.scss */
+.tumblr {
+  background: url("../images/logo-sprite.png") 30px -120px;
+}
+
+/* line 31, ../sass/partials/_post.scss */
+.pinterest {
+  background: url("../images/logo-sprite.png") 30px -150px;
+}
+
+/* line 32, ../sass/partials/_post.scss */
+.linkedin {
+  background: url("../images/logo-sprite.png") 30px -180px;
+}
+
+/* line 34, ../sass/partials/_post.scss */
+#post {
+  margin-left: 25%;
+  display: inline-block;
+}
+
+/* line 39, ../sass/partials/_post.scss */
+#post-meta {
+  margin: 2px;
+  padding: 0 0 30px 0;
+}
+
+/* line 44, ../sass/partials/_post.scss */
+#post-content p {
+  line-height: 21px;
+  font-size: 118%;
+  max-width: 710px;
 }

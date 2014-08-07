@@ -14,18 +14,18 @@
       <header>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri() . '/images/ceramicity-logo.png'; ?>" alt="Ceramicity logo" title="Ceramicity"></a>
         <div id="categories">
-          <?php wp_list_categories( 'title_li=' ); ?> 
+          <ul>
+            <?php wp_list_categories( 'title_li=' ); ?> 
+          </ul>
         </div>
-        <div id="header-right">
+        <div class="header-right">
           <div id="search">
-            <form>
-              <input type="text" value="" name="search" placeholder="Search">
-            </form>
+            <?php get_search_form(); ?>
           </div>
           <div id="social">
             <p>Follow us on:</p>
-            <div id="twitter"></div>
-            <div id="pinterest"></div>
+            <a href="https://twitter.com/Ceramic_Citi"><div id="twitter"></div></a>
+            <a href="http://www.pinterest.com/ceramicity/"><div id="pinterest"></div></a>
           </div>
         </div>
       </header>
