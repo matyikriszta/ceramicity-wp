@@ -24,8 +24,7 @@
 }
 
 .post {
-  width: 23%;
-  margin-bottom: 20px;
+  @include column(3);
 }
 
 .post img {

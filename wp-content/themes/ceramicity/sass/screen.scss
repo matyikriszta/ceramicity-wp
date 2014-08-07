@@ -5,8 +5,13 @@
 
 @import "compass/reset";
 
+@import "_base.scss";
+
+/*templates*/
+@import "partials/_semantic-fluid-grid.scss";
 @import "partials/_layout.scss";
 @import "partials/_header.scss";
+@import "partials/_footer.scss";
 @import "partials/_index.scss";
 @import "partials/_post.scss";
 
