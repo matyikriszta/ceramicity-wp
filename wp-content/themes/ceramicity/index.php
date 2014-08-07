@@ -9,7 +9,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article class="post">
-          <img src="images/lindform3.jpg" alt="">
+          <?php the_post_thumbnail(); ?>
           <p class="grey"><?php the_category(', '); ?></p>
           <a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>
           <p><?php the_excerpt(); ?></p>

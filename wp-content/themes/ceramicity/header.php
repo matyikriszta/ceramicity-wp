@@ -7,6 +7,7 @@
     <meta name="description" content="Modern and contemporary ceramic design">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/normalize.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/styles.css'; ?>">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="wrapper">
