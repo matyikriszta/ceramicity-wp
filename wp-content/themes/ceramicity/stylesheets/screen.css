@@ -187,12 +187,22 @@ input[type=text]:focus {
 }
 
 /* line 21, ../sass/partials/_index.scss */
-.divider {
-  margin: 35px 0 35px 0;
+#site-page {
+  padding: 40px 0 40px 0;
   border-top: 1px solid #dedfe0;
+  border-bottom: 1px solid #dedfe0;
+}
+/* line 2, ../sass/partials/_mixins.scss */
+#site-page:before, #site-page:after {
+  content: "";
+  display: table;
+}
+/* line 7, ../sass/partials/_mixins.scss */
+#site-page:after {
+  clear: both;
 }
 
-/* line 26, ../sass/partials/_index.scss */
+/* line 28, ../sass/partials/_index.scss */
 .post {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -202,13 +212,13 @@ input[type=text]:focus {
   width: 25%;
 }
 
-/* line 30, ../sass/partials/_index.scss */
+/* line 32, ../sass/partials/_index.scss */
 .post img {
   width: 100%;
   height: auto;
 }
 
-/* line 35, ../sass/partials/_index.scss */
+/* line 37, ../sass/partials/_index.scss */
 .post h1 {
   font-size: 16px;
 }

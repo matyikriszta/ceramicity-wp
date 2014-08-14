@@ -18,9 +18,11 @@
   color: #a1a1a1;
 }
 
-.divider {
-  margin: 35px 0 35px 0;
+#site-page {
+  @include clearfix;
+  padding: 40px 0 40px 0; 
   border-top: 1px solid #dedfe0;
+  border-bottom: 1px solid #dedfe0;
 }
 
 .post {
