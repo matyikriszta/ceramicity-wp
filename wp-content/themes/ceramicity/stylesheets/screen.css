@@ -68,25 +68,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*templates*/
-/**
-* sematic Fluid Grid -- part of the utilities Namespace
-*
-* Based on Semantic.gs for LESS: http://lesscss.org/
-*
-* $author       Zone dev
-* $email        frontend@thisiszone.com
-* $url          http://www.thisiszone.com/
-* $copyright    Copyright (c) 2012, thisiszone.com. All rights reserved.
-* $version      1.0
-*/
-/* line 29, ../sass/partials/_semantic-fluid-grid.scss */
-body {
-  margin: 0;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* line 1, ../sass/partials/_layout.scss */
 body {
   font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
@@ -97,26 +78,22 @@ body {
 
 /* line 8, ../sass/partials/_layout.scss */
 #wrapper {
-  display: inline;
-  float: left;
-  width: 97.91667%;
-  margin-right: 1.04167%;
-  margin-left: 1.04167%;
-  *width: 97.86667%;
-  *margin: 0 0.99167%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* line 12, ../sass/partials/_layout.scss */
+/* line 14, ../sass/partials/_layout.scss */
 ul, ol {
   list-style-type: none;
 }
 
-/* line 16, ../sass/partials/_layout.scss */
+/* line 18, ../sass/partials/_layout.scss */
 a {
   text-decoration: none;
   color: #333;
 }
-/* line 20, ../sass/partials/_layout.scss */
+/* line 22, ../sass/partials/_layout.scss */
 a:hover {
   color: #ff3366;
 }
@@ -217,13 +194,12 @@ input[type=text]:focus {
 
 /* line 26, ../sass/partials/_index.scss */
 .post {
-  display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
-  width: 22.91667%;
-  margin-right: 1.04167%;
-  margin-left: 1.04167%;
-  *width: 22.86667%;
-  *margin: 0 0.99167%;
+  padding: 0 10px;
+  width: 25%;
 }
 
 /* line 30, ../sass/partials/_index.scss */

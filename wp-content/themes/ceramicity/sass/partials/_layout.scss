@@ -6,7 +6,9 @@ body {
 }
 
 #wrapper {
-  @include column(12);
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
 }
 
 ul, ol {

@@ -1,0 +1,10 @@
+@mixin col($i) {
+    @include box-sizing(border-box);
+    float:left;
+    padding: 0 $gutter / 2;
+    width:percentage(($column-width * $i) / $max-width); 
+}
+
+@mixin nested-col($denominator, $numerator) {
+    width: percentage($denominator / $numerator);
+}
