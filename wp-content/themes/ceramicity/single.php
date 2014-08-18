@@ -4,7 +4,7 @@
       <div class="divider"></div>
       <div id="post-aside">
         <div id="post-nav">
-          <p><< Previous / Next >></p>
+          <p><?php previous_post_link('%link', '<< Previous'); ?> / <?php next_post_link('%link', 'Next >>'); ?></p>
           <ul>
             <li><div class="email"></div><p>Email</p></li>
             <li><div class="facebook"></div><p>Facebook</p></li>

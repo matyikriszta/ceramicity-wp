@@ -13,7 +13,7 @@
     <div id="wrapper">
       <header>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri() . '/images/ceramicity-logo.png'; ?>" alt="Ceramicity logo" title="Ceramicity"></a>
-        <div id="categories">
+        <div class="categories">
           <ul>
             <?php wp_list_categories( 'title_li=' ); ?> 
           </ul>
@@ -24,8 +24,8 @@
           </div>
           <div id="social">
             <p>Follow us on:</p>
-            <a href="https://twitter.com/Ceramic_Citi"><div id="twitter"></div></a>
-            <a href="http://www.pinterest.com/ceramicity/"><div id="pinterest"></div></a>
+            <a href="https://twitter.com/Ceramic_Citi" target="_blank"><div id="twitter"></div></a>
+            <a href="http://www.pinterest.com/ceramicity/" target="_blank"><div id="pinterest"></div></a>
           </div>
         </div>
       </header>

@@ -117,19 +117,18 @@ header {
 }
 
 /* line 3, ../sass/partials/_header.scss */
-#categories, .header-right {
+.categories, .header-right {
   vertical-align: top;
   display: inline-block;
-  border: 1px solid black;
 }
 
-/* line 9, ../sass/partials/_header.scss */
-#categories li {
+/* line 8, ../sass/partials/_header.scss */
+.categories li {
   padding-left: 40px;
   margin-bottom: 10px;
 }
 
-/* line 14, ../sass/partials/_header.scss */
+/* line 13, ../sass/partials/_header.scss */
 input[type=text] {
   border: 1px solid #dedfe0;
   border-radius: 4px;
@@ -139,25 +138,25 @@ input[type=text] {
   color: #6b6b6b;
 }
 
-/* line 23, ../sass/partials/_header.scss */
+/* line 22, ../sass/partials/_header.scss */
 input[type=text]:focus {
   border: 1px solid #ff3366;
 }
 
-/* line 27, ../sass/partials/_header.scss */
+/* line 26, ../sass/partials/_header.scss */
 #social {
   vertical-align: bottom;
   margin-top: 100px;
 }
 
-/* line 32, ../sass/partials/_header.scss */
+/* line 31, ../sass/partials/_header.scss */
 #social p {
   margin-right: 10px;
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 38, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 #twitter, #pinterest {
   vertical-align: middle;
   display: inline-block;
@@ -166,12 +165,12 @@ input[type=text]:focus {
   height: 30px;
 }
 
-/* line 46, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
 #pinterest {
   background: url("../images/logo-sprite.png") 30px 60px;
 }
 
-/* line 47, ../sass/partials/_header.scss */
+/* line 46, ../sass/partials/_header.scss */
 #twitter {
   background: url("../images/logo-sprite.png") 30px 150px;
 }
