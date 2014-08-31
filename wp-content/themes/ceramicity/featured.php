@@ -11,7 +11,10 @@
       <div class="featured-categories"><?php the_category(', '); ?></div>
       <a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>
       <p><?php the_excerpt(); ?></p>
-      <p class="grey"><?php the_date(); ?></p>
+      <div class="featured-post-meta">
+        <?php the_date(); ?> / 
+        <a href="<?php comments_link(); ?>">Leave a comment</a>
+      </div>
     </div>
   <?php endwhile;?>
 </div>

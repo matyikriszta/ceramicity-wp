@@ -2,33 +2,17 @@
   @include clearfix;
 }
 
-#text {
-  vertical-align: top;
-  margin-left: 34px;
-  display: inline-block;
-  width: 36%;
-}
-
-.grey {
-  color: #a1a1a1;
-}
-
-#site-page {
-  @include clearfix;
-  padding: 40px 0 40px 0; 
-  border-top: 1px solid #dedfe0;
-  border-bottom: 1px solid #dedfe0;
-}
-
 .post {
-  width: 22%;
+  @include col(3);
+  margin-bottom: $spacing;
 }
 
 .post img {
   width: 100%;
   height: auto;
+  margin-bottom: $spacing / 2;
 }
 
-.post h1 {
-  font-size: 16px;
+.post-categories > a {
+  color: $color-grey-light;
 }
