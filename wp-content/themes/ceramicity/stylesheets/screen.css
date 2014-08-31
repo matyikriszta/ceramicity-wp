@@ -233,54 +233,16 @@ input[type=text]:focus {
 
 /* line 23, ../sass/partials/_index.scss */
 .post {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  padding: 0 20px;
-  width: 25%;
-}
-@media (max-width: 768px) {
-  /* line 23, ../sass/partials/_index.scss */
-  .post {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding: 0 20px;
-    width: 33.33333%;
-  }
-}
-@media (max-width: 600px) {
-  /* line 23, ../sass/partials/_index.scss */
-  .post {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding: 0 20px;
-    width: 50%;
-  }
-}
-@media (max-width: 320px) {
-  /* line 23, ../sass/partials/_index.scss */
-  .post {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding: 0 20px;
-    width: 100%;
-  }
+  width: 22%;
 }
 
-/* line 36, ../sass/partials/_index.scss */
+/* line 27, ../sass/partials/_index.scss */
 .post img {
   width: 100%;
   height: auto;
 }
 
-/* line 41, ../sass/partials/_index.scss */
+/* line 32, ../sass/partials/_index.scss */
 .post h1 {
   font-size: 16px;
 }

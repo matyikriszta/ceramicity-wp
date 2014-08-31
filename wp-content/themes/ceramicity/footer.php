@@ -4,5 +4,6 @@
         <p>Theme by Krisztina Matyi</p>
       </footer>
     </div>
+    <?php wp_footer(); ?>
   </body>
 </html>
