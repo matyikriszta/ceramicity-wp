@@ -2,19 +2,18 @@
   @include clearfix;
   margin-bottom: 40px;
 }
-.featured-post-image, .featured-post-content {
-  display: inline-block;
-}
+
+// .featured-post-image, .featured-post-content {
+//   @include inline-block;
+// }
 
 .featured-post-image {
   @include col(6);
-  height: 320px;
+  padding-top: 32.25%;
   background-size: cover;
-  background-position: center center;
-  padding: 0;
+  background-position: center;
 }
 
 .featured-post-content {
   @include col(6);
-  padding-left: 40px;
 }

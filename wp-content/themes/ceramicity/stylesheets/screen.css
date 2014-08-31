@@ -176,16 +176,6 @@ input[type=text]:focus {
 }
 
 /* line 1, ../sass/partials/_index.scss */
-#image {
-  display: inline-block;
-  width: 60%;
-  background-image: url("../images/featured-img.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 300px;
-}
-
-/* line 10, ../sass/partials/_index.scss */
 #text {
   vertical-align: top;
   margin-left: 34px;
@@ -193,12 +183,12 @@ input[type=text]:focus {
   width: 36%;
 }
 
-/* line 17, ../sass/partials/_index.scss */
+/* line 8, ../sass/partials/_index.scss */
 .grey {
   color: #a1a1a1;
 }
 
-/* line 21, ../sass/partials/_index.scss */
+/* line 12, ../sass/partials/_index.scss */
 #site-page {
   padding: 40px 0 40px 0;
   border-top: 1px solid #dedfe0;
@@ -214,23 +204,23 @@ input[type=text]:focus {
   clear: both;
 }
 
-/* line 28, ../sass/partials/_index.scss */
+/* line 19, ../sass/partials/_index.scss */
 .post {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 25%;
 }
 
-/* line 32, ../sass/partials/_index.scss */
+/* line 23, ../sass/partials/_index.scss */
 .post img {
   width: 100%;
   height: auto;
 }
 
-/* line 37, ../sass/partials/_index.scss */
+/* line 28, ../sass/partials/_index.scss */
 .post h1 {
   font-size: 16px;
 }
@@ -332,23 +322,17 @@ input[type=text]:focus {
   clear: both;
 }
 
-/* line 5, ../sass/partials/_featured.scss */
-.featured-post-image, .featured-post-content {
-  display: inline-block;
-}
-
-/* line 9, ../sass/partials/_featured.scss */
+/* line 10, ../sass/partials/_featured.scss */
 .featured-post-image {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 50%;
-  height: 320px;
+  padding-top: 32.25%;
   background-size: cover;
-  background-position: center center;
-  padding: 0;
+  background-position: center;
 }
 
 /* line 17, ../sass/partials/_featured.scss */
@@ -357,7 +341,6 @@ input[type=text]:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 50%;
-  padding-left: 40px;
 }
