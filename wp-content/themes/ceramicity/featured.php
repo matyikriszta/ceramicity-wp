@@ -8,10 +8,10 @@
       </a>
     <?php endif; ?>
     <div class="featured-post-content">
-      <ul class="grey"><?php the_category(', '); ?></ul>
+      <div class="featured-categories"><?php the_category(', '); ?></div>
       <a href="<?php the_permalink() ?>"><h1><?php the_title(); ?></h1></a>
       <p><?php the_excerpt(); ?></p>
-      <p class="grey"><?php the_date(); ?> / Leave a comment</p>
+      <p class="grey"><?php the_date(); ?></p>
     </div>
   <?php endwhile;?>
 </div>

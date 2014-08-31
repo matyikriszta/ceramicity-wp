@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/screen.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/stylesheets/print.css'; ?>">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <?php wp_head(); ?>
   </head>
   <body>
     <div id="wrapper">

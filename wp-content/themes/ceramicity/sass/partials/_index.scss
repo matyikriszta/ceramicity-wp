@@ -1,3 +1,7 @@
+#container {
+  @include clearfix;
+}
+
 #text {
   vertical-align: top;
   margin-left: 34px;
@@ -18,6 +22,15 @@
 
 .post {
   @include col(3);
+  @include bp(768px) {
+    @include col(4);
+  }
+  @include bp(600px) {
+    @include col(6);
+  }
+  @include bp(320px) {
+    @include col(12);
+  }
 }
 
 .post img {

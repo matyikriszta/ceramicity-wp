@@ -1,19 +1,32 @@
 .featured-post {
   @include clearfix;
-  margin-bottom: 40px;
+  margin: 0  $spacing 2 * $spacing;
 }
-
-// .featured-post-image, .featured-post-content {
-//   @include inline-block;
-// }
 
 .featured-post-image {
   @include col(6);
   padding-top: 32.25%;
-  background-size: cover;
+  @include background-size(cover);
   background-position: center;
+  @include bp(600px) {
+    @include col(12);
+    padding-top: 54.25%;
+    margin-bottom: $spacing; 
+  }
 }
 
 .featured-post-content {
   @include col(6);
+  @include bp(600px) {
+    @include col(12);
+    padding: 0;
+  }
+}
+
+.featured-categories {
+  margin-bottom: $spacing;
+}
+
+.featured-categories > a {
+  color: $color-grey-light;
 }
