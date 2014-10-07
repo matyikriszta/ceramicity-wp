@@ -1,11 +1,28 @@
-.categories, .header-right {
-  vertical-align: top;
+.header {
+  margin: 2 * $spacing 0;
+  @include pie-clearfix;
+  position: relative;
+}
+
+.logo, .categories, .archives, .site-search {
   display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.social-follow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.categories {
+  vertical-align: top;
 }
 
 .categories li {
   padding-left: 40px;
-  margin-bottom: 10px;
+  margin-bottom: $spacing / 2;
 }
 
 input[type=text] {
@@ -20,25 +37,3 @@ input[type=text] {
 input[type=text]:focus {
   border: 1px solid #ff3366;
 }
-
-#social {
-  vertical-align: bottom;
-  margin-top: 100px;
-}
-
-#social p {
-  margin-right: 10px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-#twitter, #pinterest {
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-}
-
-#pinterest { background: url("../images/logo-sprite.png") 30px 60px; }
-#twitter { background: url("../images/logo-sprite.png") 30px 150px; }

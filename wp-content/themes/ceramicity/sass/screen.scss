@@ -6,13 +6,12 @@
 @import "compass/reset";
 @import "compass/css3/inline-block";
 @import "compass/css3/background-size";
+@import "compass/utilities/general/clearfix";
 
 @import "_base.scss";
 
 @import "partials/_mixins.scss";
 @import "partials/_box-sizing-grid.scss";
-
-/*templates*/
 
 @import "partials/_layout.scss";
 @import "partials/_header.scss";

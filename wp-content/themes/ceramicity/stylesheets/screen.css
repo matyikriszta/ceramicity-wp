@@ -67,7 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*templates*/
 /* line 1, ../sass/partials/_layout.scss */
 body {
   font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
@@ -141,18 +140,44 @@ p:last-of-type {
 }
 
 /* line 1, ../sass/partials/_header.scss */
-.categories, .header-right {
-  vertical-align: top;
-  display: inline-block;
+.header {
+  margin: 40px 0;
+  *zoom: 1;
+  position: relative;
+}
+/* line 38, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 6, ../sass/partials/_header.scss */
+/* line 7, ../sass/partials/_header.scss */
+.logo, .categories, .archives, .site-search {
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+/* line 13, ../sass/partials/_header.scss */
+.social-follow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 19, ../sass/partials/_header.scss */
+.categories {
+  vertical-align: top;
+}
+
+/* line 23, ../sass/partials/_header.scss */
 .categories li {
   padding-left: 40px;
   margin-bottom: 10px;
 }
 
-/* line 11, ../sass/partials/_header.scss */
+/* line 28, ../sass/partials/_header.scss */
 input[type=text] {
   border: 1px solid #dedfe0;
   border-radius: 4px;
@@ -162,41 +187,9 @@ input[type=text] {
   color: #6b6b6b;
 }
 
-/* line 20, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 input[type=text]:focus {
   border: 1px solid #ff3366;
-}
-
-/* line 24, ../sass/partials/_header.scss */
-#social {
-  vertical-align: bottom;
-  margin-top: 100px;
-}
-
-/* line 29, ../sass/partials/_header.scss */
-#social p {
-  margin-right: 10px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-/* line 35, ../sass/partials/_header.scss */
-#twitter, #pinterest {
-  vertical-align: middle;
-  display: inline-block;
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-}
-
-/* line 43, ../sass/partials/_header.scss */
-#pinterest {
-  background: url("../images/logo-sprite.png") 30px 60px;
-}
-
-/* line 44, ../sass/partials/_header.scss */
-#twitter {
-  background: url("../images/logo-sprite.png") 30px 150px;
 }
 
 /* line 2, ../sass/partials/_mixins.scss */
