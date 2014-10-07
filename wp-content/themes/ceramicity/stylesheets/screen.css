@@ -167,27 +167,53 @@ p:last-of-type {
 }
 
 /* line 19, ../sass/partials/_header.scss */
+.social-follow svg {
+  fill: #ff3366;
+}
+
+/* line 23, ../sass/partials/_header.scss */
+.social-follow h3 {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+/* line 29, ../sass/partials/_header.scss */
+.social-follow a {
+  padding-left: 10px;
+}
+
+/* line 33, ../sass/partials/_header.scss */
 .categories {
   vertical-align: top;
 }
 
-/* line 23, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 .categories li {
   padding-left: 40px;
   margin-bottom: 10px;
 }
+/* line 41, ../sass/partials/_header.scss */
+.categories li:last-child {
+  margin-bottom: 0;
+}
 
-/* line 28, ../sass/partials/_header.scss */
+/* line 46, ../sass/partials/_header.scss */
+.categories ul {
+  margin-bottom: 0;
+}
+
+/* line 50, ../sass/partials/_header.scss */
 input[type=text] {
   border: 1px solid #dedfe0;
   border-radius: 4px;
-  width: 200px;
+  width: 228px;
   padding: 6px 9px;
   outline: none;
   color: #6b6b6b;
 }
 
-/* line 37, ../sass/partials/_header.scss */
+/* line 59, ../sass/partials/_header.scss */
 input[type=text]:focus {
   border: 1px solid #ff3366;
 }
