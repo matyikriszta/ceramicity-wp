@@ -23,6 +23,11 @@
           <div id="search">
             <?php get_search_form(); ?>
           </div>
+          <div class="archives">
+                <ul>
+                  <?php wp_get_archives('type=monthly'); ?>
+                </ul>
+          </div>
           <div id="social">
             <p>Follow us on:</p>
             <a href="https://twitter.com/Ceramic_Citi" target="_blank"><div id="twitter"></div></a>

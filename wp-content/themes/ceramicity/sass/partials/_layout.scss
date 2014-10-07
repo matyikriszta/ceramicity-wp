@@ -23,20 +23,17 @@ ul, ol {
   margin-bottom: $spacing;
 }
 
-@mixin heading {
+h1 {
+  font-size: 2em;
   font-weight: bold;
   margin-bottom: $spacing;
-
-} 
-
-h1 {
-  @include heading;
-  font-size: 2em;
 }
 
 h2 {
-  @include heading;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: $spacing;
+
 }
 
 a {
