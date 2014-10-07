@@ -389,3 +389,8 @@ input[type=text]:focus {
 .featured-categories > a {
   color: #a1a1a1;
 }
+
+/* line 1, ../sass/partials/_archive.scss */
+.archives-title {
+  text-align: center;
+}
