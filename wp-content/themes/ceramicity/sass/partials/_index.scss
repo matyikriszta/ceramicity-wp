@@ -5,12 +5,26 @@
 .post {
   @include col(3);
   margin-bottom: $spacing;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+  &:hover {
+    background: $color-magenta;
+    color: #fff;
+  }
+}
+
+.post:hover a {
+  color: #fff;
 }
 
 .post img {
   width: 100%;
   height: auto;
-  margin-bottom: $spacing / 2;
+  margin-bottom: $spacing;
+}
+
+.post p {
+  margin-bottom: 10px;
 }
 
 .post-categories > a {

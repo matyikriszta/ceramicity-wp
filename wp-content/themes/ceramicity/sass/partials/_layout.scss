@@ -39,9 +39,6 @@ h2 {
 a {
   text-decoration: none;
   color: #333;
-  &:hover {
-    color: #ff3366;
-  }
 }
 
 p {
@@ -51,4 +48,12 @@ p {
 
 p:last-of-type {
   margin-bottom: 0;
+}
+
+.post-meta {
+  color: $color-grey-light;
+}
+
+.post-meta a {
+  color: $color-grey-light;
 }
