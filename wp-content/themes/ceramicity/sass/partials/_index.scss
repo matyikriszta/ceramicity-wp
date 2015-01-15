@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .post {
+    @include col(12);
+  }
+}
+
 .post:hover a {
   color: #fff;
 }

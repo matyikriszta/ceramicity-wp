@@ -252,24 +252,35 @@ input[type=text]:focus {
   color: #fff;
 }
 
-/* line 16, ../sass/partials/_index.scss */
+@media screen and (max-width: 600px) {
+  /* line 17, ../sass/partials/_index.scss */
+  .post {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+/* line 22, ../sass/partials/_index.scss */
 .post:hover a {
   color: #fff;
 }
 
-/* line 20, ../sass/partials/_index.scss */
+/* line 26, ../sass/partials/_index.scss */
 .post img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
-/* line 26, ../sass/partials/_index.scss */
+/* line 32, ../sass/partials/_index.scss */
 .post p {
   margin-bottom: 10px;
 }
 
-/* line 30, ../sass/partials/_index.scss */
+/* line 36, ../sass/partials/_index.scss */
 .post-categories > a {
   color: #a1a1a1;
 }
