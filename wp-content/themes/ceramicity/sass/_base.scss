@@ -1,11 +1,10 @@
+// grid
 $max-width:               1000px;
 $bs-columns:              12;
 $column-width:            $max-width / $bs-columns;
 $gutter:                  40px;
+$spacing: 20px;
 
 // colors
 $color-magenta: #ff3366;
 $color-grey-light: #a1a1a1;
-
-
-$spacing: 20px;

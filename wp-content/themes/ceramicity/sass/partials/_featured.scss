@@ -8,7 +8,7 @@
   padding-top: 32.25%;
   @include background-size(cover);
   background-position: center;
-  @include bp(600px) {
+  @include bp(800px) {
     @include col(12);
     padding-top: 54.25%;
     margin-bottom: $spacing; 
@@ -17,7 +17,7 @@
 
 .featured-post-content {
   @include col(6);
-  @include bp(600px) {
+  @include bp(800px) {
     @include col(12);
     padding: 0;
   }

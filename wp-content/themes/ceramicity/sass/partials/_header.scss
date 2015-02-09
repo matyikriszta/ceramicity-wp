@@ -1,19 +1,54 @@
 .header {
-  margin: 2 * $spacing $spacing;
+  padding: 2 * $spacing $spacing;
   @include pie-clearfix;
   position: relative;
+  @include bp(460px) {
+    padding: $spacing;
+  }
 }
 
-.logo, .categories, .archives, .site-search {
-  display: inline-block;
+.logo, 
+.categories, 
+.archives, 
+.site-search {
   width: 25%;
   float: left;
+}
+.logo {
+  @include bp(460px) {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.categories {
+  @include bp(460px) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: none;
+  }
+}
+
+.site-search {
+  @include bp(460px) {
+    width: 100%;
+    display: none;
+  }
+}
+// TODO: move archive to bottom
+.archives {
+  @include bp(460px) {
+    display: none;
+  }
 }
 
 .social-follow {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 20px;
 }
 
 .social-follow svg {
@@ -24,6 +59,9 @@
   display: inline-block;
   vertical-align: top;
   padding-top: $spacing / 2;
+  @include bp(460px) {
+    @include visually-hidden;
+  }
 }
 
 .social-follow a {
@@ -47,15 +85,12 @@
   margin-bottom: 0;
 }
 
-input[type=text] {
-  border: 1px solid #dedfe0;
-  border-radius: 4px;
-  width: 228px;
-  padding: 6px 9px;
-  outline: none;
-  color: #6b6b6b;
-}
-
-input[type=text]:focus {
-  border: 1px solid #ff3366;
+.menu-button {
+  display: none;
+  @include bp(460px) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }

@@ -1,7 +1,6 @@
 #container {
   @include clearfix;
 }
-
 .post {
   @include col(3);
   margin-bottom: $spacing;
@@ -11,11 +10,15 @@
     background: $color-magenta;
     color: #fff;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .post {
+  @include bp(800px) {
+    @include col(6);
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+  @include bp(460px) {
     @include col(12);
+    padding-top: $spacing;
+    padding-bottom: $spacing;
   }
 }
 
@@ -35,4 +38,11 @@
 
 .post-categories > a {
   color: $color-grey-light;
+}
+
+.post-meta {
+  color: $color-grey-light;
+  a {
+    color: $color-grey-light;
+  }
 }

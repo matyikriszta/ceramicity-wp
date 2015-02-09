@@ -9,6 +9,12 @@
     }
 }
 
+@mixin visually-hidden {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;  
+}
+
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
      -moz-box-sizing: $box-model; // Firefox <= 19
