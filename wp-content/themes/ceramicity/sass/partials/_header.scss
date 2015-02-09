@@ -75,10 +75,12 @@
 .categories li {
   padding-left: 40px;
   margin-bottom: $spacing / 2;
-
   &:last-child {
     margin-bottom: 0;
   }
+  a:hover {
+    color: $color-magenta;
+  } 
 }
 
 .categories ul {

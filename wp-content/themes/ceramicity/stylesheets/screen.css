@@ -248,22 +248,26 @@ img {
   padding-left: 40px;
   margin-bottom: 10px;
 }
-/* line 79, ../sass/partials/_header.scss */
+/* line 78, ../sass/partials/_header.scss */
 .categories li:last-child {
   margin-bottom: 0;
 }
+/* line 81, ../sass/partials/_header.scss */
+.categories li a:hover {
+  color: #ff3366;
+}
 
-/* line 84, ../sass/partials/_header.scss */
+/* line 86, ../sass/partials/_header.scss */
 .categories ul {
   margin-bottom: 0;
 }
 
-/* line 88, ../sass/partials/_header.scss */
+/* line 90, ../sass/partials/_header.scss */
 .menu-button {
   display: none;
 }
 @media (max-width: 460px) {
-  /* line 88, ../sass/partials/_header.scss */
+  /* line 90, ../sass/partials/_header.scss */
   .menu-button {
     display: block;
     position: absolute;
@@ -537,5 +541,39 @@ img {
 }
 /* line 14, ../sass/partials/_forms.scss */
 .site-search input[type=text]:focus {
+  border: 1px solid #ff3366;
+}
+
+/* line 18, ../sass/partials/_forms.scss */
+.custom-dropdown {
+  position: relative;
+}
+/* line 21, ../sass/partials/_forms.scss */
+.custom-dropdown:after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 0;
+  background: #ff3366;
+  border-radius: 0 4px 4px 0;
+}
+
+/* line 31, ../sass/partials/_forms.scss */
+.custom-dropdown-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 4px;
+  margin: 0;
+  width: 80%;
+  background-color: #fff;
+  border: 1px solid #dedfe0;
+  font-size: .8em;
+  border-radius: 4px;
+  outline: none;
+}
+/* line 44, ../sass/partials/_forms.scss */
+.custom-dropdown-select:focus {
   border: 1px solid #ff3366;
 }
