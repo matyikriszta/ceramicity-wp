@@ -13,36 +13,38 @@
   <body>
     <div id="wrapper">
       <header class="header">
-        <div class="menu-button">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-            <g><path d="M15.055 2.554c4.378 0 8.757-0.001 13.1 0.001c1.326 0 1.7 0.4 1.7 1.691c0.006 0.6 0 1.277-0.007 1.9 c-0.035 0.902-0.444 1.308-1.346 1.373c-0.231 0.017-0.464 0.007-0.696 0.007c-8.583 0-17.165 0.001-25.748 0 c-1.738 0-2.032-0.293-2.032-2.008c0-0.464-0.004-0.928 0.001-1.392c0.013-1.142 0.438-1.581 1.574-1.583 C6.124 2.6 10.6 2.6 15.1 2.554z"/><path d="M14.967 17.524c-4.378 0-8.757 0.001-13.135-0.001c-1.365-0.001-1.744-0.385-1.747-1.759 c-0.002-0.609-0.014-1.218 0.004-1.827c0.026-0.881 0.453-1.318 1.334-1.391c0.202-0.017 0.406-0.008 0.609-0.008 c8.641 0 17.281-0.001 25.9 0c1.666 0 2 0.3 2 1.989c0.001 0.5 0 0.986-0.003 1.5 c-0.027 1.089-0.452 1.513-1.549 1.515C23.897 17.5 19.4 17.5 15 17.524z"/><path d="M14.96 27.446c-4.378 0-8.757 0.001-13.135-0.001c-1.362-0.001-1.737-0.384-1.74-1.764 c-0.002-0.609-0.015-1.218 0.004-1.827c0.027-0.877 0.457-1.314 1.339-1.385c0.202-0.016 0.406-0.008 0.609-0.008 c8.641 0 17.282-0.001 25.9 0c1.637 0 2 0.3 2 1.91c0.001 0.5 0 1.044-0.003 1.6 c-0.027 1.087-0.452 1.506-1.555 1.507C23.891 27.4 19.4 27.4 15 27.446z"/></g>
-          </svg>
-        </div>
         <div class="logo">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="<?php echo get_template_directory_uri() . '/images/ceramicity-logo.png'; ?>" alt="Ceramicity logo" title="Ceramicity">
           </a>
         </div>
-        <div class="categories">
-          <ul>
-            <?php wp_list_categories( 'title_li=' ); ?> 
-          </ul>
+        <div class="navigation-button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+            <g><path d="M15.055 2.554c4.378 0 8.757-0.001 13.1 0.001c1.326 0 1.7 0.4 1.7 1.691c0.006 0.6 0 1.277-0.007 1.9 c-0.035 0.902-0.444 1.308-1.346 1.373c-0.231 0.017-0.464 0.007-0.696 0.007c-8.583 0-17.165 0.001-25.748 0 c-1.738 0-2.032-0.293-2.032-2.008c0-0.464-0.004-0.928 0.001-1.392c0.013-1.142 0.438-1.581 1.574-1.583 C6.124 2.6 10.6 2.6 15.1 2.554z"/><path d="M14.967 17.524c-4.378 0-8.757 0.001-13.135-0.001c-1.365-0.001-1.744-0.385-1.747-1.759 c-0.002-0.609-0.014-1.218 0.004-1.827c0.026-0.881 0.453-1.318 1.334-1.391c0.202-0.017 0.406-0.008 0.609-0.008 c8.641 0 17.281-0.001 25.9 0c1.666 0 2 0.3 2 1.989c0.001 0.5 0 0.986-0.003 1.5 c-0.027 1.089-0.452 1.513-1.549 1.515C23.897 17.5 19.4 17.5 15 17.524z"/><path d="M14.96 27.446c-4.378 0-8.757 0.001-13.135-0.001c-1.362-0.001-1.737-0.384-1.74-1.764 c-0.002-0.609-0.015-1.218 0.004-1.827c0.027-0.877 0.457-1.314 1.339-1.385c0.202-0.016 0.406-0.008 0.609-0.008 c8.641 0 17.282-0.001 25.9 0c1.637 0 2 0.3 2 1.91c0.001 0.5 0 1.044-0.003 1.6 c-0.027 1.087-0.452 1.506-1.555 1.507C23.891 27.4 19.4 27.4 15 27.446z"/></g>
+          </svg>
         </div>
-        <div class="archives">
-          <!-- <h3>Archives</h3> -->
-          <span class="custom-dropdown">
-            <select class="custom-dropdown-select" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-              <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
-              <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option' ) ); ?>
-            </select>
-          </span>
-          </ul>
-        </div>
-        <div class="site-search">
-          <?php get_search_form(); ?>
+        <div class="navigation">
+          <div class="categories">
+            <ul>
+              <?php wp_list_categories( 'title_li=' ); ?> 
+            </ul>
+          </div>
+          <div class="archives">
+            <!-- <h3>Archives</h3> -->
+            <span class="custom-dropdown">
+              <select class="custom-dropdown-select" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+                <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
+                <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option' ) ); ?>
+              </select>
+            </span>
+            </ul>
+          </div>
+          <div class="site-search">
+            <?php get_search_form(); ?>
+          </div>
         </div>
         <div class="social-follow">
-          <h3>Follow us on:</h3>
+          <p>Follow us on:</p>
           <a href="https://twitter.com/Ceramic_Citi">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
               <title>Follow us on twitter</title>

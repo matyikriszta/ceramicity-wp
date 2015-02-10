@@ -1,6 +1,6 @@
 body {
   font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px; 
+  font-size: 14px; 
   font-weight: normal;
   color: #333;
 }
@@ -40,6 +40,9 @@ h2 {
 a {
   text-decoration: none;
   color: #333;
+  &:hover {
+    color: $color-magenta;
+  }
 }
 
 p {

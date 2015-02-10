@@ -22,77 +22,78 @@
 }
 
 .categories {
+  vertical-align: top;
   @include bp(460px) {
-    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    display: none;
+    float:none;
+  }
+  li {
+    padding-left: 40px;
+    margin-bottom: $spacing / 2;
+    &:last-child {
+      margin-bottom: 0;
+    }    
+  }
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.archives {
+  @include bp(467px) {
+    display: block;
+    float: none;
   }
 }
 
 .site-search {
   @include bp(460px) {
-    width: 100%;
-    display: none;
-  }
-}
-// TODO: move archive to bottom
-.archives {
-  @include bp(460px) {
-    display: none;
+    display: block;
+    float: none;
   }
 }
 
 .social-follow {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .social-follow svg {
   fill: #ff3366;
 }
 
-.social-follow h3 {
+.social-follow p {
   display: inline-block;
   vertical-align: top;
   padding-top: $spacing / 2;
   @include bp(460px) {
     @include visually-hidden;
   }
-}
-
-.social-follow a {
-  padding-left: $spacing / 2;
-}
-
-.categories {
-  vertical-align: top;
-}
-
-.categories li {
-  padding-left: 40px;
-  margin-bottom: $spacing / 2;
-  &:last-child {
-    margin-bottom: 0;
+  a {
+    padding-left: $spacing / 2;
   }
-  a:hover {
-    color: $color-magenta;
-  } 
 }
 
-.categories ul {
-  margin-bottom: 0;
-}
-
-.menu-button {
+.navigation-button {
   display: none;
   @include bp(460px) {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+}
+
+.navigation {
+  @include pie-clearfix;
+  @include bp(460px) {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: $spacing;
   }
 }
