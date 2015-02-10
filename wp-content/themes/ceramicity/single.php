@@ -34,6 +34,7 @@
         </div>
         <div id="post-content">
           <?php the_content(); ?>
+          <p>Tags: <?php the_tags('', ', '); ?></p>
           <div id="respond">
             <?php comments_template(); ?>
           </div>
