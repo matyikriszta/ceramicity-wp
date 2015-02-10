@@ -1,18 +1,25 @@
-#post-aside {
-  margin-top: 32px;
-  position: fixed;
-  width: 25%;
-  vertical-align: top;
-  display: inline-block;
+.single-post-title {
+  margin-left: 25%;
 }
 
-#post-nav ul {
+.post-content {
+  width: 75%;
+  float: right;
+}
+
+.post-aside {
+  position: fixed;
+  width: 25%;
+  float: left;
+  margin-top: -37px;
+}
+
+.post-nav ul {
   margin-top: 26px;
 }
 
-#post-nav p {
+.post-nav p {
   vertical-align: middle;
-  margin-left: 10px;
   display: inline-block;
 }
 
@@ -31,18 +38,6 @@
 .pinterest { background: url("../images/logo-sprite.png") 30px -150px; }
 .linkedin { background: url("../images/logo-sprite.png") 30px -180px; }
 
-#post {
-  margin-left: 25%;
-  display: inline-block;
-}
-
-#post-meta {
-  margin: 2px;
-  padding: 0 0 30px 0;
-}
-
-#post-content p {
-  line-height: 21px;
-  font-size: 118%;
-  max-width: 710px;
+.single-post-meta {
+  margin: $spacing 0;
 }

@@ -167,6 +167,11 @@ img {
   max-width: 100%;
 }
 
+/* line 72, ../sass/partials/_layout.scss */
+.grey {
+  color: #dedfe0;
+}
+
 /* line 1, ../sass/partials/_header.scss */
 .header {
   padding: 40px 0;
@@ -428,27 +433,36 @@ footer .archives {
 }
 
 /* line 1, ../sass/partials/_post.scss */
-#post-aside {
-  margin-top: 32px;
-  position: fixed;
-  width: 25%;
-  vertical-align: top;
-  display: inline-block;
+.single-post-title {
+  margin-left: 25%;
 }
 
-/* line 9, ../sass/partials/_post.scss */
-#post-nav ul {
+/* line 5, ../sass/partials/_post.scss */
+.post-content {
+  width: 75%;
+  float: right;
+}
+
+/* line 10, ../sass/partials/_post.scss */
+.post-aside {
+  position: fixed;
+  width: 25%;
+  float: left;
+  margin-top: -37px;
+}
+
+/* line 17, ../sass/partials/_post.scss */
+.post-nav ul {
   margin-top: 26px;
 }
 
-/* line 13, ../sass/partials/_post.scss */
-#post-nav p {
+/* line 21, ../sass/partials/_post.scss */
+.post-nav p {
   vertical-align: middle;
-  margin-left: 10px;
   display: inline-block;
 }
 
-/* line 19, ../sass/partials/_post.scss */
+/* line 26, ../sass/partials/_post.scss */
 .email, .facebook, .twitter, .google, .tumblr, .pinterest, .linkedin {
   vertical-align: middle;
   display: inline-block;
@@ -456,58 +470,44 @@ footer .archives {
   height: 30px;
 }
 
-/* line 26, ../sass/partials/_post.scss */
+/* line 33, ../sass/partials/_post.scss */
 .email {
   background: url("../images/logo-sprite.png") 30px 0px;
 }
 
-/* line 27, ../sass/partials/_post.scss */
+/* line 34, ../sass/partials/_post.scss */
 .facebook {
   background: url("../images/logo-sprite.png") 30px -30px;
 }
 
-/* line 28, ../sass/partials/_post.scss */
+/* line 35, ../sass/partials/_post.scss */
 .twitter {
   background: url("../images/logo-sprite.png") 30px -60px;
 }
 
-/* line 29, ../sass/partials/_post.scss */
+/* line 36, ../sass/partials/_post.scss */
 .google {
   background: url("../images/logo-sprite.png") 30px -90px;
 }
 
-/* line 30, ../sass/partials/_post.scss */
+/* line 37, ../sass/partials/_post.scss */
 .tumblr {
   background: url("../images/logo-sprite.png") 30px -120px;
 }
 
-/* line 31, ../sass/partials/_post.scss */
+/* line 38, ../sass/partials/_post.scss */
 .pinterest {
   background: url("../images/logo-sprite.png") 30px -150px;
 }
 
-/* line 32, ../sass/partials/_post.scss */
+/* line 39, ../sass/partials/_post.scss */
 .linkedin {
   background: url("../images/logo-sprite.png") 30px -180px;
 }
 
-/* line 34, ../sass/partials/_post.scss */
-#post {
-  margin-left: 25%;
-  display: inline-block;
-}
-
-/* line 39, ../sass/partials/_post.scss */
-#post-meta {
-  margin: 2px;
-  padding: 0 0 30px 0;
-}
-
-/* line 44, ../sass/partials/_post.scss */
-#post-content p {
-  line-height: 21px;
-  font-size: 118%;
-  max-width: 710px;
+/* line 41, ../sass/partials/_post.scss */
+.single-post-meta {
+  margin: 20px 0;
 }
 
 /* line 1, ../sass/partials/_featured.scss */
