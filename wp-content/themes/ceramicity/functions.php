@@ -13,6 +13,11 @@
   endif; //! is_admin()
   endif; //! slug_scripts_masonry exists
 
+  function app() {
+    wp_enqueue_script( 'appInit', get_stylesheet_directory_uri() .'/js/app.js', array( 'jquery' ), null, false);
+  }
+  add_action( 'wp_enqueue_scripts', 'app' );
+
   function new_excerpt_more($more) {
      global $post;
      return '';

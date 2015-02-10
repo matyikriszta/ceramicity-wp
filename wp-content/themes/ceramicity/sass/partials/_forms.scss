@@ -3,12 +3,15 @@
     @include visually-hidden;
   }
   input[type=text] {
-    border: 1px solid #dedfe0;
+    border: 1px solid $color-grey-light;
     border-radius: 4px;
     width: 90%;
     padding: 6px 9px;
     outline: none;
     color: #6b6b6b;
+    @include bp(460px) {
+      width: 100%;
+    }
   }
 
   input[type=text]:focus {

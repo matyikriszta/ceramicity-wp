@@ -10,23 +10,23 @@ body {
   font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
   font-size: 14px; 
   font-weight: normal;
-  color: #333;
+  color: $color-text;
 }
 
 #wrapper {
-  width: 1000px;
+  width: $max-width;
   max-width: 100%;
   margin: 0 auto;
   @include bp(1000px) {
-    padding: 0 20px;
+    padding: 0 $spacing;
   }
 }
 
 .site-content {
   @include clearfix;
-  padding: 40px 0 40px 0; 
-  border-top: 1px solid #dedfe0;
-  border-bottom: 1px solid #dedfe0;
+  padding: 2 * $spacing 0; 
+  border-top: 1px solid $color-grey-light;
+  border-bottom: 1px solid $color-grey-light;
 }
 
 ul, ol {
@@ -50,7 +50,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: $color-text;
   &:hover {
     color: $color-magenta;
   }

@@ -3,7 +3,7 @@
   @include pie-clearfix;
   position: relative;
   @include bp(460px) {
-    padding: $spacing;
+    padding: $spacing 0;
   }
 }
 
@@ -25,12 +25,16 @@
   @include bp(460px) {
     width: 100%;
     float:none;
+    margin-bottom: $spacing;
   }
   li {
     padding-left: 40px;
     margin-bottom: $spacing / 2;
     &:last-child {
       margin-bottom: 0;
+    }
+    @include bp(460px) {
+      padding-left:0;
     }    
   }
   ul {
@@ -42,6 +46,7 @@
   @include bp(460px) {
     display: block;
     float: none;
+    width: 100%;
   }
 }
 
@@ -49,10 +54,13 @@
   position: absolute;
   right: 0;
   bottom: 40px;
+  @include bp(460px) {
+    bottom: 20px;
+  }
 }
 
 .social-follow svg {
-  fill: #ff3366;
+  fill: $color-magenta;
 }
 
 .social-follow p {
@@ -73,7 +81,8 @@
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 0;
+    z-index: 2;
   }
 }
 
@@ -86,6 +95,11 @@
     top: 0;
     left: 0;
     background: #fff;
-    padding: $spacing;
+    padding: 3 * $spacing $spacing $spacing;
+    z-index: 1;
   }
+}
+
+.show {
+  display: block;
 }
