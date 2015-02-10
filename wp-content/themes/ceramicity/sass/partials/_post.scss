@@ -41,3 +41,12 @@
 .single-post-meta {
   margin: $spacing 0;
 }
+
+.post-tags,
+.post-comment {
+  margin: 2 * $spacing 0;
+}
+
+#respond {
+  @include pie-clearfix;
+}

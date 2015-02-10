@@ -31,7 +31,7 @@
         <div class="post-content">
           <?php the_content(); ?>
           <div class="post-tags">
-            Tags: <?php the_tags('', ', '); ?>
+            <strong>Tags:</strong> <?php the_tags('', ', '); ?>
           </div>
           <div class="post-comment">
             <?php comments_template(); ?>

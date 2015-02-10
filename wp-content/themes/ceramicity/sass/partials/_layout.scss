@@ -48,6 +48,10 @@ h2 {
   font-size: 1.5em;
 }
 
+h3 {
+  font-size: 1.2em;
+}
+
 a {
   text-decoration: none;
   color: $color-text;
@@ -71,4 +75,8 @@ img {
 
 .grey {
   color: $color-grey-light;
+}
+
+strong {
+  font-weight: bold;
 }
