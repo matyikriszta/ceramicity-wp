@@ -23,12 +23,18 @@
       <div id="post">
         <div id="post-title">
           <h1><?php the_title(); ?></h1>
-          <div id="post-meta">  
-            <p><span class="grey">By</span> <?php the_author(); ?> <span class="grey">/</span> <?php the_date(); ?> <span class="grey">/</span> <?php the_category(', '); ?> <span class="grey">/</span> Leave a comment  <span class="grey">/</span> Edit</p>
+          <div id="post-meta"> 
+            <?php 
+              $archive_year  = get_the_time('Y'); 
+              $archive_month = get_the_time('m'); 
+              $archive_day   = get_the_time('d'); 
+            ?> 
+            <p><span class="grey">by</span> <?php the_author_posts_link(); ?> <span class="grey">/</span> <a href="<?php echo get_day_link( $archive_year, $archive_month, $archive_day); ?>"><?php the_date(); ?></a> <span class="grey">/</span> <?php the_category(', '); ?> <span class="grey">/</span> Leave a comment</p>
           </div>
         </div>
         <div id="post-content">
           <?php the_content(); ?>
+          <?php comments_template(); ?>
         </div>
       </div>
       <div class="divider"></div>
