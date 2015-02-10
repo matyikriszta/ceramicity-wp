@@ -1,6 +1,6 @@
 .featured-post {
   @include clearfix;
-  margin: 0  $spacing 2 * $spacing;
+  margin-bottom: 2 * $spacing;
 }
 
 .featured-post-image {

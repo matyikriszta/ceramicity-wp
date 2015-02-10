@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
         <!-- featured post -->
         <?php get_template_part('featured'); ?>
 
@@ -9,5 +8,4 @@
             <?php get_template_part('masonry'); ?>
           <?php endwhile; endif; ?>
         </div>
-
 <?php get_footer(); ?>

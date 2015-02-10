@@ -1,5 +1,5 @@
 .header {
-  padding: 2 * $spacing $spacing;
+  padding: 2 * $spacing 0;
   @include pie-clearfix;
   position: relative;
   @include bp(460px) {
@@ -9,7 +9,6 @@
 
 .logo, 
 .categories, 
-.archives, 
 .site-search {
   width: 25%;
   float: left;
@@ -39,13 +38,6 @@
   }
 }
 
-.archives {
-  @include bp(467px) {
-    display: block;
-    float: none;
-  }
-}
-
 .site-search {
   @include bp(460px) {
     display: block;
@@ -55,7 +47,7 @@
 
 .social-follow {
   position: absolute;
-  right: 20px;
+  right: 0;
   bottom: 40px;
 }
 

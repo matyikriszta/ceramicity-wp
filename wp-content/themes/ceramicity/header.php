@@ -29,16 +29,6 @@
               <?php wp_list_categories( 'title_li=' ); ?> 
             </ul>
           </div>
-          <div class="archives">
-            <!-- <h3>Archives</h3> -->
-            <span class="custom-dropdown">
-              <select class="custom-dropdown-select" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-                <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
-                <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option' ) ); ?>
-              </select>
-            </span>
-            </ul>
-          </div>
           <div class="site-search">
             <?php get_search_form(); ?>
           </div>

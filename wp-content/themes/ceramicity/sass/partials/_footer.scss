@@ -1,9 +1,9 @@
 footer {
+  @include pie-clearfix;
   padding: 2 * $spacing $spacing;
-
-  p {
+  .disclaimer,
+  .archives {
     width: 50%;
     float: left;
-    text-align: center;
-  }
+  } 
 }
